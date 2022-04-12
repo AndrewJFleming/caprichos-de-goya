@@ -1,0 +1,43 @@
+.single-page-wrapper {
+  text-align: center;
+}
+
+.single-image-wrapper {
+  /* height: 100%; */
+  overflow: contain;
+}
+
+.single-image-fullsize {
+  cursor: zoom-in;
+  display: block;
+  margin: 0 auto;
+  height: 75vh;
+}
+
+.enlarged {
+  cursor: zoom-out;
+  height: auto;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.single-image-title {
+  margin: 2rem 0 0 0;
+  text-align: center;
+}
+.single-image-english {
+  margin: 0;
+  text-align: center;
+}
+
+.categories-wrapper {
+  margin: 0 0 1rem 0;
+  text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  .single-image-fullsize {
+    height: auto;
+    width: 100%;
+  }
+}

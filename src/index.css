@@ -1,13 +1,76 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #fffef9;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.john-fell {
+  font-family: "IM Fell English SC", serif;
+}
+
+.app-wrapper {
+  display: flex;
+}
+.app-inner {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.page-comp-wrapper {
+  height: 100%;
+  margin-top: 2rem;
+  padding: 5px 30px;
+  box-sizing: border-box;
+}
+
+.gallery-col {
+  margin-bottom: 0.8rem;
+  text-align: center;
+}
+
+.gallery-item-title {
+  margin-top: 8px;
+}
+a,
+.gallery-item-title a,
+.single-image-category a {
+  color: #713600;
+}
+a:hover,
+a:active,
+.gallery-item-title a:hover,
+.single-image-category a:hover,
+.gallery-item-title a:active,
+.single-image-category a:active {
+  color: #303030;
+}
+
+.app-inner {
+  margin-left: 200px;
+}
+
+.print-id {
+  font-weight: 600;
+}
+
+.page-component-title {
+  margin: 2rem 0 1rem 0;
+  text-align: center;
+}
+
+@media screen and (max-width: 899px) {
+  .app-inner {
+    margin-left: 0;
+  }
 }

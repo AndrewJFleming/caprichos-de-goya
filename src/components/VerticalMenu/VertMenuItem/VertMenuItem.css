@@ -1,0 +1,19 @@
+.subcat-list-item {
+  padding-left: 20px;
+}
+.subcat-list-item:active,
+.subcat-list-item:hover {
+  padding-left: 19px;
+  background-color: rgba(255, 255, 255, 0.15);
+  border-left: 1px solid #fff;
+}
+
+.subcat-list-item-link {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.subcat-list-item-link:active,
+.subcat-list-item-link:hover {
+  color: #fff;
+}
