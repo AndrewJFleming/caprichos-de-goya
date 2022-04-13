@@ -1,8 +1,10 @@
-import React, { FC, useState } from "react";
+import { FC, useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
 // import { Person, HairColor } from "./components/Person";
 import { Home } from "./pages/Home/Home";
+import { About } from "./pages/About/About";
+import { Contact } from "./pages/Contact/Contact";
 import { SingleImage } from "./pages/SingleImage/SingleImage";
 import { ImageCategory } from "./pages/ImageCategory/ImageCategory";
 import { Header } from "./components/Header/Header";
@@ -33,6 +35,8 @@ const App: FC = () => {
         />
         <Routes>
           <Route path="/" element={<Home imageData={imageData} />} />
+          <Route path="/about" element={<About categories={categoryData} />} />
+          <Route path="/contact" element={<Contact />} />
           <Route
             path="/caprichos/:imageId"
             element={<SingleImage imageData={imageData} />}
