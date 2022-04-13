@@ -2,8 +2,9 @@ import React, { FC } from "react";
 import { Link } from "react-router-dom";
 
 import Logo from "../../images/los-caprichos-logo, dark.png";
-// import PageCompLinks from "../PageCompLinks/PageCompLinks";
+import { PageCompLinks } from "../PageCompLinks/PageCompLinks";
 import { VertMenuItem } from "./VertMenuItem/VertMenuItem";
+import { VertMenuListTitle } from "./VertMenuListTitle/VertMenuListTitle";
 import "./VerticalMenu.css";
 
 interface Props {
@@ -25,14 +26,15 @@ export const VerticalMenu: FC<Props> = ({
       </Link>
       <nav>
         <ul>
+          <VertMenuListTitle title="Themes" />
           {categories.map((category: any) => (
             <VertMenuItem key={category.id} category={category} />
           ))}
-          {/* {otherLinks && (
-            <div className="other-link-wrapper">
+          {otherLinks && (
+            <span className="other-link-wrapper">
               <PageCompLinks onVertMenu={true} otherLinks={otherLinks} />
-            </div>
-          )} */}
+            </span>
+          )}
         </ul>
       </nav>
     </div>
