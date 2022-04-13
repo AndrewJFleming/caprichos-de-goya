@@ -1,20 +1,20 @@
-import React, { FC } from "react";
+import { FC } from "react";
 import { Link, useParams } from "react-router-dom";
 
 import { Container, Row, Col } from "react-bootstrap";
 
 interface Props {
   imageData: any[];
-  categories: any[];
+  allSubCats: any[];
 }
 
-export const ImageCategory: FC<Props> = ({ imageData, categories }) => {
+export const PrintCategory: FC<Props> = ({ imageData, allSubCats }) => {
   const { catId } = useParams();
 
   return (
     <div className="page-comp-wrapper">
       <Container>
-        {categories
+        {allSubCats
           .filter((category: any) => category.slug === catId)
           .map((filteredCategory: any) => (
             <h1 className="page-component-title">{filteredCategory.title}</h1>
