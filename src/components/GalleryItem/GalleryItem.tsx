@@ -1,12 +1,6 @@
-import React, { FC, ChangeEvent, useState } from "react";
+import { FC } from "react";
 import { Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
-
-// export enum HairColor {
-//   Blonde = "Your hair is blonde.",
-//   Brunette = "Darker than blonde.",
-//   Black = "The Darkest.",
-// }
 
 interface Props {
   thumbUrl: string;
