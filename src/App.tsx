@@ -1,19 +1,27 @@
-import { FC, useState } from "react";
+import { FC, useEffect, useState } from "react";
 import { Routes, Route } from "react-router-dom";
-import "./App.css";
 // import { Person, HairColor } from "./components/Person";
 import { Home } from "./pages/Home/Home";
 import { About } from "./pages/About/About";
 import { Contact } from "./pages/Contact/Contact";
 import { SingleImage } from "./pages/SingleImage/SingleImage";
-import { ImageCategory } from "./pages/ImageCategory/ImageCategory";
+import { PrintCategory } from "./pages/PrintCategory/PrintCategory";
 import { Header } from "./components/Header/Header";
 import { VerticalMenu } from "./components/VerticalMenu/VerticalMenu";
 
 import { imageData, otherLinks, categoryData } from "./data";
 
 const App: FC = () => {
+  const [allSubCats, setAllSubCats] = useState<any[]>([]);
   const [vertMenuCollapsed, setVertMenuCollapsed] = useState<boolean>(false);
+
+  useEffect(() => {
+    const mergedSubCats: any[] = [];
+    categoryData.forEach((category) =>
+      category.subCats.forEach((subCat) => mergedSubCats.push(subCat))
+    );
+    setAllSubCats(mergedSubCats);
+  }, []);
 
   const handleVertCollapse = () => {
     setVertMenuCollapsed(!vertMenuCollapsed);
@@ -44,7 +52,7 @@ const App: FC = () => {
           <Route
             path="/category/:catId"
             element={
-              <ImageCategory imageData={imageData} categories={categoryData} />
+              <PrintCategory imageData={imageData} allSubCats={allSubCats} />
             }
           />
         </Routes>
