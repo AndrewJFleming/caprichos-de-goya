@@ -1,16 +1,17 @@
 import React, { FC, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 
+import { Image } from "./Image/Image";
 import { Container } from "react-bootstrap";
-import "./SingleImage.css";
+import "./SinglePrint.css";
 
 interface Props {
   imageData: object[];
 }
 
-export const SingleImage: FC<Props> = ({ imageData }) => {
+export const SinglePrint: FC<Props> = ({ imageData }) => {
   const { imageId } = useParams();
-  const [isFullscreen, setIsFullscreen] = useState<boolean>(false);
+  const [isZoomedIn, setIsZoomedIn] = useState<boolean>(false);
 
   return (
     <div className="page-comp-wrapper">
@@ -18,7 +19,7 @@ export const SingleImage: FC<Props> = ({ imageData }) => {
         .filter((image: any) => image.id === imageId)
         .map((filteredImage: any) => (
           <Container>
-            {!isFullscreen && (
+            {!isZoomedIn && (
               <React.Fragment>
                 <h2 className="single-image-title">{filteredImage.title}</h2>
                 <h5 className="single-image-english">
@@ -35,16 +36,11 @@ export const SingleImage: FC<Props> = ({ imageData }) => {
                 </div>
               </React.Fragment>
             )}
-            <div className="single-image-wrapper">
-              <img
-                className={`single-image-fullsize ${
-                  isFullscreen && "enlarged"
-                }`}
-                src={filteredImage.fullsizeUrl}
-                alt={`${filteredImage.title}, from fullsize url`}
-                onClick={() => setIsFullscreen(!isFullscreen)}
-              />
-            </div>
+            <Image
+              isZoomedIn={isZoomedIn}
+              filteredImage={filteredImage}
+              setIsZoomedIn={setIsZoomedIn}
+            />
           </Container>
         ))}
     </div>

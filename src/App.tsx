@@ -1,10 +1,10 @@
 import { FC, useEffect, useState } from "react";
 import { Routes, Route } from "react-router-dom";
-// import { Person, HairColor } from "./components/Person";
+
 import { Home } from "./pages/Home/Home";
 import { About } from "./pages/About/About";
 import { Contact } from "./pages/Contact/Contact";
-import { SingleImage } from "./pages/SingleImage/SingleImage";
+import { SinglePrint } from "./pages/SinglePrint/SinglePrint";
 import { PrintCategory } from "./pages/PrintCategory/PrintCategory";
 import { Header } from "./components/Header/Header";
 import { VerticalMenu } from "./components/VerticalMenu/VerticalMenu";
@@ -47,7 +47,7 @@ const App: FC = () => {
           <Route path="/contact" element={<Contact />} />
           <Route
             path="/caprichos/:imageId"
-            element={<SingleImage imageData={imageData} />}
+            element={<SinglePrint imageData={imageData} />}
           />
           <Route
             path="/category/:catId"
