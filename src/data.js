@@ -29,7 +29,7 @@ export const categoryData = [
   {
     id: "nlSqYP",
     title: "Mundane Themes",
-    collapsible: true,
+    collapsible: false,
     subCats: [
       {
         id: "concerns-of-maidens",
@@ -51,7 +51,7 @@ export const categoryData = [
   {
     id: "nlSqYG",
     title: "Fantastical Themes",
-    collapsible: true,
+    collapsible: false,
     subCats: [
       {
         id: "behaving-like-beasts",
@@ -77,7 +77,7 @@ export const imageData = [
     id: "1",
     title: "Francisco Goya y Lucientes, pintor",
     englishTitle: "Francisco Goya y Lucientes, painter",
-    categories: [{ slug: "", name: "" }],
+    categories: [],
     largeUrl:
       "https://live.staticflickr.com/65535/51991150618_a508f84f78_b.jpg",
     fullsizeUrl:
@@ -101,7 +101,7 @@ export const imageData = [
     id: "3",
     title: "Que viene el coco",
     englishTitle: "Here comes the bogeyman",
-    categories: [{ slug: "", name: "" }],
+    categories: [],
     largeUrl:
       "https://live.staticflickr.com/65535/51991150463_f2efc79939_b.jpg",
     fullsizeUrl:
@@ -113,7 +113,7 @@ export const imageData = [
     id: "4",
     title: "El de la Rollona",
     englishTitle: "Nanny's boy",
-    categories: [{ slug: "", name: "" }],
+    categories: [],
     largeUrl:
       "https://live.staticflickr.com/65535/51991150143_0ec57d439a_b.jpg",
     fullsizeUrl:
@@ -205,7 +205,7 @@ export const imageData = [
     id: "11",
     title: "Muchachos al avío",
     englishTitle: "Lads making ready",
-    categories: [{ slug: "", name: "" }],
+    categories: [],
     largeUrl:
       "https://live.staticflickr.com/65535/51991648070_7aa4cd12ec_b.jpg",
     fullsizeUrl:
@@ -217,7 +217,7 @@ export const imageData = [
     id: "12",
     title: "A caza de dientes",
     englishTitle: "Out hunting for teeth",
-    categories: [{ slug: "", name: "" }],
+    categories: [],
     largeUrl:
       "https://live.staticflickr.com/65535/51991371864_60af1a6a23_b.jpg",
     fullsizeUrl:
@@ -229,7 +229,7 @@ export const imageData = [
     id: "13",
     title: "Están calientes",
     englishTitle: "They are hot",
-    categories: [{ slug: "", name: "" }],
+    categories: [],
     largeUrl:
       "https://live.staticflickr.com/65535/51991371554_df9303f77a_b.jpg",
     fullsizeUrl:
@@ -289,7 +289,7 @@ export const imageData = [
     id: "18",
     title: "Y se le quema la casa",
     englishTitle: "And the house is on fire",
-    categories: [{ slug: "", name: "" }],
+    categories: [],
     largeUrl:
       "https://live.staticflickr.com/65535/51991088031_762fa2cca6_b.jpg",
     fullsizeUrl:
@@ -301,7 +301,7 @@ export const imageData = [
     id: "19",
     title: "Todos caerán",
     englishTitle: "Everyone will fall",
-    categories: [{ slug: "", name: "" }],
+    categories: [],
     largeUrl:
       "https://live.staticflickr.com/65535/51991647160_c4b9af93f4_b.jpg",
     fullsizeUrl:
@@ -337,7 +337,7 @@ export const imageData = [
     id: "22",
     title: "¡Pobrecitas!",
     englishTitle: "Poor little girls!",
-    categories: [{ slug: "", name: "" }],
+    categories: [],
     largeUrl:
       "https://live.staticflickr.com/65535/51990094062_244ddb2aa5_b.jpg",
     fullsizeUrl:
@@ -349,7 +349,7 @@ export const imageData = [
     id: "23",
     title: "Aquellos polvos",
     englishTitle: "Those specks of dust",
-    categories: [{ slug: "", name: "" }],
+    categories: [],
     largeUrl:
       "https://live.staticflickr.com/65535/51991374089_311e02d372_b.jpg",
     fullsizeUrl:
@@ -361,7 +361,7 @@ export const imageData = [
     id: "24",
     title: "No hubo remedio",
     englishTitle: "There was no help",
-    categories: [{ slug: "", name: "" }],
+    categories: [],
     largeUrl:
       "https://live.staticflickr.com/65535/51991373809_eb9f2d3454_b.jpg",
     fullsizeUrl:
@@ -373,7 +373,7 @@ export const imageData = [
     id: "25",
     title: "Si quebró el cántaro",
     englishTitle: "He broke the pitcher",
-    categories: [{ slug: "", name: "" }],
+    categories: [],
     largeUrl:
       "https://live.staticflickr.com/65535/51991090101_c43663b6b4_b.jpg",
     fullsizeUrl:
@@ -409,7 +409,7 @@ export const imageData = [
     id: "28",
     title: "Chitón",
     englishTitle: "Hush",
-    categories: [{ slug: "", name: "" }],
+    categories: [],
     largeUrl:
       "https://live.staticflickr.com/65535/51991373259_596a856d12_b.jpg",
     fullsizeUrl:
@@ -421,7 +421,7 @@ export const imageData = [
     id: "29",
     title: "Esto sí que es leer",
     englishTitle: "Now that's reading",
-    categories: [{ slug: "", name: "" }],
+    categories: [],
     largeUrl:
       "https://live.staticflickr.com/65535/51991125033_eda8543f52_b.jpg",
     fullsizeUrl:
@@ -433,7 +433,7 @@ export const imageData = [
     id: "30",
     title: "¿Por qué esconderlos?",
     englishTitle: "Why hide them?",
-    categories: [{ slug: "", name: "" }],
+    categories: [],
     largeUrl:
       "https://live.staticflickr.com/65535/51991124828_84990952cf_b.jpg",
     fullsizeUrl:
@@ -469,7 +469,7 @@ export const imageData = [
     id: "33",
     title: "Al conde palatino",
     englishTitle: "To the count palatine",
-    categories: [{ slug: "", name: "" }],
+    categories: [],
     largeUrl:
       "https://live.staticflickr.com/65535/51991124573_5d72fa7ffc_b.jpg",
     fullsizeUrl:
@@ -481,7 +481,7 @@ export const imageData = [
     id: "34",
     title: "Las rinde el sueño",
     englishTitle: "Sleep overcomes them",
-    categories: [{ slug: "", name: "" }],
+    categories: [],
     largeUrl:
       "https://live.staticflickr.com/65535/51990067147_bcb773038e_b.jpg",
     fullsizeUrl:
@@ -639,7 +639,7 @@ export const imageData = [
     id: "46",
     title: "Corrección",
     englishTitle: "Correction",
-    categories: [{ slug: "", name: "" }],
+    categories: [],
     largeUrl:
       "https://live.staticflickr.com/65535/51991345914_dcb3abcf9f_b.jpg",
     fullsizeUrl:
@@ -651,7 +651,7 @@ export const imageData = [
     id: "47",
     title: "Obsequio al maestro",
     englishTitle: "A gift for the master",
-    categories: [{ slug: "", name: "" }],
+    categories: [],
     largeUrl:
       "https://live.staticflickr.com/65535/51991123663_80d15ec9d2_b.jpg",
     fullsizeUrl:
@@ -691,7 +691,7 @@ export const imageData = [
     id: "50",
     title: "Los Chinchillas",
     englishTitle: "The Chinchillas",
-    categories: [{ slug: "", name: "" }],
+    categories: [],
     largeUrl:
       "https://live.staticflickr.com/65535/51991622285_8b62d070e1_b.jpg",
     fullsizeUrl:
@@ -717,7 +717,7 @@ export const imageData = [
     id: "52",
     title: "¡Lo que puede un sastre!",
     englishTitle: "What a tailor can do!",
-    categories: [{ slug: "", name: "" }],
+    categories: [],
     largeUrl:
       "https://live.staticflickr.com/65535/51991123178_9f6d8332fc_b.jpg",
     fullsizeUrl:
@@ -729,7 +729,7 @@ export const imageData = [
     id: "53",
     title: "¡Que pico de oro!",
     englishTitle: "What a golden beak!",
-    categories: [{ slug: "", name: "" }],
+    categories: [],
     largeUrl:
       "https://live.staticflickr.com/65535/51991062346_1064035ce8_b.jpg",
     fullsizeUrl:
@@ -741,7 +741,7 @@ export const imageData = [
     id: "54",
     title: "El vergonzoso",
     englishTitle: "The shameful one",
-    categories: [{ slug: "", name: "" }],
+    categories: [],
     largeUrl:
       "https://live.staticflickr.com/65535/51990065492_e218bdd3f4_b.jpg",
     fullsizeUrl:
@@ -753,7 +753,7 @@ export const imageData = [
     id: "55",
     title: "Hasta la muerte",
     englishTitle: "Until death",
-    categories: [{ slug: "", name: "" }],
+    categories: [],
     largeUrl:
       "https://live.staticflickr.com/65535/51991122538_875c61127e_b.jpg",
     fullsizeUrl:
@@ -779,7 +779,7 @@ export const imageData = [
     id: "57",
     title: "La filiación",
     englishTitle: "The filiation",
-    categories: [{ slug: "", name: "" }],
+    categories: [],
     largeUrl:
       "https://live.staticflickr.com/65535/51991344259_4dc7ae708c_b.jpg",
     fullsizeUrl:
@@ -791,7 +791,7 @@ export const imageData = [
     id: "58",
     title: "Trágala, perro",
     englishTitle: "Swallow it, dog",
-    categories: [{ slug: "", name: "" }],
+    categories: [],
     largeUrl:
       "https://live.staticflickr.com/65535/51991621030_4289969804_b.jpg",
     fullsizeUrl:
@@ -803,7 +803,7 @@ export const imageData = [
     id: "59",
     title: "¡Y aún no se van!",
     englishTitle: "And still they don't go!",
-    categories: [{ slug: "", name: "" }],
+    categories: [],
     largeUrl:
       "https://live.staticflickr.com/65535/51991620780_5e7d9bf9a0_b.jpg",
     fullsizeUrl:
@@ -1024,7 +1024,7 @@ export const imageData = [
     title: "Está vuestra merced... pues, como digo... ¡eh! ¡cuidado! si no...",
     englishTitle:
       "You understand?... Well, as I say... eh! Look out! Otherwise...",
-    categories: [{ slug: "", name: "" }],
+    categories: [],
     largeUrl:
       "https://live.staticflickr.com/65535/51991061096_931599b593_b.jpg",
     fullsizeUrl:
@@ -1036,7 +1036,7 @@ export const imageData = [
     id: "77",
     title: "Unos a otros",
     englishTitle: "What one does to the other",
-    categories: [{ slug: "", name: "" }],
+    categories: [],
     largeUrl:
       "https://live.staticflickr.com/65535/51991624110_671cc8edfd_b.jpg",
     fullsizeUrl:
@@ -1048,7 +1048,7 @@ export const imageData = [
     id: "78",
     title: "Despacha, que despiertan",
     englishTitle: "Be quick, they are waking up",
-    categories: [{ slug: "", name: "" }],
+    categories: [],
     largeUrl:
       "https://live.staticflickr.com/65535/51991620345_06edc3d220_b.jpg",
     fullsizeUrl:
@@ -1072,7 +1072,7 @@ export const imageData = [
     id: "80",
     title: "Ya es hora",
     englishTitle: "It is time",
-    categories: [{ slug: "", name: "" }],
+    categories: [],
     largeUrl:
       "https://live.staticflickr.com/65535/51991060351_60bac29e4b_b.jpg",
     fullsizeUrl:

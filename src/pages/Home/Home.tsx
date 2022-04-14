@@ -1,7 +1,6 @@
-import React, { FC, ChangeEvent, useState } from "react";
+import { FC } from "react";
 
-import { Container, Row, Col } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { Container, Row } from "react-bootstrap";
 import { GalleryItem } from "../../components/GalleryItem/GalleryItem";
 import "./Home.css";
 
@@ -15,7 +14,7 @@ export const Home: FC<Props> = ({ imageData }) => {
       <Container>
         <div className="page-component-title">
           <h1>
-            <span style={{ color: "#7b4412" }}>CAPRICHOS</span> de GOYA
+            <span style={{ color: "#5d9cd6" }}>CAPRICHOS</span> de GOYA
           </h1>
           <p className="home-title-translation">
             <em>(Eighty Caprices)</em>

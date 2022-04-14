@@ -25,15 +25,17 @@ export const SinglePrint: FC<Props> = ({ imageData }) => {
                 <h5 className="single-image-english">
                   <em>({filteredImage.englishTitle})</em>
                 </h5>
-                <div className="categories-wrapper">
-                  {filteredImage.categories.map((imageCategory: any) => (
-                    <p className="single-image-category">
-                      <Link to={`/category/${imageCategory.slug}`}>
-                        {imageCategory.name}
-                      </Link>
-                    </p>
-                  ))}
-                </div>
+                {filteredImage.categories.length !== 0 && (
+                  <div className="categories-wrapper">
+                    {filteredImage.categories.map((imageCategory: any) => (
+                      <p className="single-image-category">
+                        <Link to={`/category/${imageCategory.slug}`}>
+                          {imageCategory.name}
+                        </Link>
+                      </p>
+                    ))}
+                  </div>
+                )}
               </React.Fragment>
             )}
             <Image
