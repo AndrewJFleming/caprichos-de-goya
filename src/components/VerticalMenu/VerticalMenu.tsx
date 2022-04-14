@@ -1,7 +1,7 @@
 import { FC } from "react";
 import { Link } from "react-router-dom";
 
-import Logo from "../../images/los-caprichos-logo, dark.png";
+import Logo from "../../images/caprichos-de-goya, dark.png";
 import { PageCompLinks } from "../PageCompLinks/PageCompLinks";
 import { ParentItem } from "./ParentItem/ParentItem";
 // import { VertMenuItem } from "./VertMenuItem/VertMenuItem";

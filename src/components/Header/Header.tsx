@@ -1,7 +1,7 @@
 import React, { FC, ChangeEvent, useState } from "react";
 import { Link } from "react-router-dom";
 
-import LogoDark from "../../images/los-caprichos-logo.png";
+import LogoDark from "../../images/caprichos-de-goya.png";
 import { PageCompLinks } from "../PageCompLinks/PageCompLinks";
 import "./Header.css";
 
