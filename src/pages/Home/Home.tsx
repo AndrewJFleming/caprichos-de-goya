@@ -1,7 +1,9 @@
 import React, { FC, ChangeEvent, useState } from "react";
+
 import { Container, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { GalleryItem } from "../../components/GalleryItem/GalleryItem";
+import "./Home.css";
 
 interface Props {
   imageData: object[];
@@ -9,10 +11,12 @@ interface Props {
 
 export const Home: FC<Props> = ({ imageData }) => {
   return (
-    <div className="mt-5">
+    <div className="page-comp-wrapper">
       <Container>
         <div className="page-component-title">
-          <h1>80 CAPRICHOS</h1>
+          <h1>
+            <span style={{ color: "#7b4412" }}>CAPRICHOS</span> de GOYA
+          </h1>
           <p className="home-title-translation">
             <em>(Eighty Caprices)</em>
           </p>
