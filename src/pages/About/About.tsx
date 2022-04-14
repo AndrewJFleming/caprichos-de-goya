@@ -5,41 +5,41 @@ import { Container } from "react-bootstrap";
 import "./About.css";
 
 interface Props {
-  categories: any[];
+  allSubCats: any[];
 }
 
-export const About: FC<Props> = ({ categories }) => {
+export const About: FC<Props> = ({ allSubCats }) => {
   const [categoryLinks, setCategoryLinks] = useState<any[]>([]);
 
   useEffect(() => {
     //Dislpay theme categories dynamically in sentence format where commas, 'and' and the period are placed correctly.
     let catThemes = [];
-    for (let i = 0; i < categories.length; i++) {
+    for (let i = 0; i < allSubCats.length; i++) {
       //Target second to last element in array.
-      if (i === categories.length - 2) {
+      if (i === allSubCats.length - 2) {
         catThemes.push({
-          title: categories[i].title,
-          slug: categories[i].slug,
+          title: allSubCats[i].title,
+          slug: allSubCats[i].slug,
           after: " and ",
         });
         //Target last element in array.
-      } else if (i === categories.length - 1) {
+      } else if (i === allSubCats.length - 1) {
         catThemes.push({
-          title: categories[i].title,
-          slug: categories[i].slug,
+          title: allSubCats[i].title,
+          slug: allSubCats[i].slug,
           after: ".",
         });
         //Target all elements preceding second to last and last elements in array.
       } else {
         catThemes.push({
-          title: categories[i].title,
-          slug: categories[i].slug,
+          title: allSubCats[i].title,
+          slug: allSubCats[i].slug,
           after: ", ",
         });
       }
     }
     setCategoryLinks(catThemes);
-  }, [categories]);
+  }, [allSubCats]);
 
   return (
     <div className="page-comp-wrapper">
