@@ -2,7 +2,7 @@ import React, { FC, ChangeEvent, useState } from "react";
 import { Link } from "react-router-dom";
 
 import LogoDark from "../../images/los-caprichos-logo.png";
-// import PageCompLinks from "../PageCompLinks/PageCompLinks";
+import { PageCompLinks } from "../PageCompLinks/PageCompLinks";
 import "./Header.css";
 
 interface Props {
@@ -29,7 +29,7 @@ export const Header: FC<Props> = ({
           />
         </Link>
         <div className="page-comp-links">
-          {/* <PageCompLinks otherLinks={otherLinks} /> */}
+          <PageCompLinks onVertMenu={false} otherLinks={otherLinks} />
         </div>
         <div className="close-button-wrapper" onClick={handleVertCollapse}>
           {vertMenuCollapsed ? (
