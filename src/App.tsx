@@ -43,7 +43,7 @@ const App: FC = () => {
         />
         <Routes>
           <Route path="/" element={<Home imageData={imageData} />} />
-          <Route path="/about" element={<About categories={categoryData} />} />
+          <Route path="/about" element={<About allSubCats={allSubCats} />} />
           <Route path="/contact" element={<Contact />} />
           <Route
             path="/caprichos/:imageId"
