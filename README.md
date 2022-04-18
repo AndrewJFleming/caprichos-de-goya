@@ -47,7 +47,7 @@
 
 [![Project Screen Shot][project-screenshot]](https://caprichos-de-goya.netlify.app/)
 
-Caprichos de Goya is a TypeScript conversion of the 80 Caprichos React.js gallery app.
+Caprichos de Goya is a TypeScript conversion of the <a href="https://github.com/AndrewJFleming/80-caprichos">80 Caprichos</a> React.js gallery app.
 
 The aim of these projects is to present high resolution scans of Goya's prints and to curate the collection by categorizing the pieces by the following themes repeated throughout: Concerns of Maidens, Decadence, Prostitution, Behaving like Beasts, Witchcraft and Fantasies of Monsters.
 
