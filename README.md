@@ -13,7 +13,7 @@
     A TypeScript conversion of <a href="https://github.com/AndrewJFleming/80-caprichos">80 Caprichos</a> built with React.js.
     <br />
     <br />
-        <a href="https://caprichos-de-goya.netlify.app/">Portraits of Iowa demo (Netlify)</a>
+        <a href="https://caprichos-de-goya.netlify.app/">Caprichos de Goya demo (Netlify)</a>
     ·
     <a href="https://www.linkedin.com/in/andrew-j-fleming-web-dev">My LinkedIn</a>
 </div>
