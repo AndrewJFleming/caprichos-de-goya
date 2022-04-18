@@ -47,9 +47,9 @@
 
 [![Project Screen Shot][project-screenshot]](https://caprichos-de-goya.netlify.app/)
 
-In the Los Caprichos etchings collection, Francisco Goya criticizes many of the superstitions and antiquated customs that were common in Spanish society during his lifetime.
+Caprichos de Goya is a TypeScript conversion of the 80 Caprichos React.js gallery app.
 
-The aim of the project is to present high resolution scans of Goya's prints and to curate the collection by categorizing the pieces by the following themes repeated throughout: Concerns of Maidens, Behaving like Beasts, Witchcraft and Fantasies of Monsters.
+The aim of these projects is to present high resolution scans of Goya's prints and to curate the collection by categorizing the pieces by the following themes repeated throughout: Concerns of Maidens, Decadence, Prostitution, Behaving like Beasts, Witchcraft and Fantasies of Monsters.
 
 _A demo version of <a href="https://caprichos-de-goya.netlify.app/">Caprichos de Goya</a> is hosted on Netlify._
 
