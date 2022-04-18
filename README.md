@@ -1,46 +1,117 @@
-# Getting Started with Create React App
+<div id="top"></div>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <a href="https://caprichos-de-goya.netlify.app/">
+    <img src="src/images/caprichos-de-goya.png" alt="Logo">
+  </a>
 
-## Available Scripts
+  <h3 align="center">Caprichos de Goya</h3>
 
-In the project directory, you can run:
+  <p align="center">
+    A TypeScript conversion of <a href="https://github.com/AndrewJFleming/80-caprichos">80 Caprichos</a> built with React.js.
+    <br />
+    <br />
+        <a href="https://caprichos-de-goya.netlify.app/">Portraits of Iowa demo (Netlify)</a>
+    ·
+    <a href="https://www.linkedin.com/in/andrew-j-fleming-web-dev">My LinkedIn</a>
+</div>
 
-### `yarn start`
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ol>
+</details>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+<!-- ABOUT THE PROJECT -->
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## About The Project
 
-### `yarn test`
+[![Project Screen Shot][project-screenshot]](https://caprichos-de-goya.netlify.app/)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+In the Los Caprichos etchings collection, Francisco Goya criticizes many of the superstitions and antiquated customs that were common in Spanish society during his lifetime.
 
-### `yarn build`
+The aim of the project is to present high resolution scans of Goya's prints and to curate the collection by categorizing the pieces by the following themes repeated throughout: Concerns of Maidens, Behaving like Beasts, Witchcraft and Fantasies of Monsters.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+_A demo version of <a href="https://caprichos-de-goya.netlify.app/">Caprichos de Goya</a> is hosted on Netlify._
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Built With
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- [TypeScript](https://www.typescriptlang.org/)
+- [React.js](https://reactjs.org/)
+- [Bootstrap](https://getbootstrap.com)
 
-### `yarn eject`
+<!-- GETTING STARTED -->
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Getting Started
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Below you'll find some instructions on what you'll need to install the project and run it locally on your machine.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### Prerequisites
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- npm
+  ```sh
+  npm install --global yarn
+  ```
 
-## Learn More
+### Installation
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Before you run the client app locally, you'll need to install its required dependencies.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. Clone the repo
+
+   ```sh
+   git clone https://github.com/your_username_/Project-Name.git
+   ```
+
+2. Install NPM packages
+
+   ```sh
+   yarn add
+   ```
+
+<!-- USAGE EXAMPLES -->
+
+## Usage
+
+1. Start the app locally.
+
+   ```sh
+   yarn start
+   ```
+
+<!-- ROADMAP -->
+
+## Roadmap
+
+- [ ] Add prints from <a href="https://en.wikipedia.org/wiki/Los_disparates">Los disparates</a> series.
+- [ ] Add 'next print in series' feature to singlePrint page components.
+- [ ] Add pagination feature.
+
+<!-- CONTACT -->
+
+## Contact
+
+Andrew Fleming - [My LinkedIn](https://www.linkedin.com/in/andrew-j-fleming-web-dev) - aflemi1@gmail.com
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+[project-screenshot]: src/images/screenshot.png
