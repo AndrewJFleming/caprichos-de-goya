@@ -1,11 +1,12 @@
 import { FC } from "react";
 
+import { ImageData } from "../../../interfaces";
 import "./Image.css";
 
 interface Props {
   isZoomedIn: boolean;
-  filteredImage: any;
-  setIsZoomedIn: any;
+  filteredImage: ImageData;
+  setIsZoomedIn: (val: boolean) => void;
 }
 
 export const Image: FC<Props> = ({

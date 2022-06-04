@@ -2,44 +2,46 @@ import React, { FC, useEffect, useState } from "react";
 
 import { Link } from "react-router-dom";
 import { Container } from "react-bootstrap";
+
+import { SubCategory, CategoryThemes } from "../../interfaces";
 import "./About.css";
 
 interface Props {
-  allSubCats: any[];
+  allSubCategories: SubCategory[];
 }
 
-export const About: FC<Props> = ({ allSubCats }) => {
-  const [categoryLinks, setCategoryLinks] = useState<any[]>([]);
+export const About: FC<Props> = ({ allSubCategories }) => {
+  const [categoryLinks, setCategoryLinks] = useState<CategoryThemes[]>([]);
 
   useEffect(() => {
     //Dislpay theme categories dynamically in sentence format where commas, 'and' and the period are placed correctly.
-    let catThemes = [];
-    for (let i = 0; i < allSubCats.length; i++) {
+    let categoryThemes = [];
+    for (let i = 0; i < allSubCategories.length; i++) {
       //Target second to last element in array.
-      if (i === allSubCats.length - 2) {
-        catThemes.push({
-          title: allSubCats[i].title,
-          slug: allSubCats[i].slug,
+      if (i === allSubCategories.length - 2) {
+        categoryThemes.push({
+          title: allSubCategories[i].title,
+          slug: allSubCategories[i].slug,
           after: " and ",
         });
         //Target last element in array.
-      } else if (i === allSubCats.length - 1) {
-        catThemes.push({
-          title: allSubCats[i].title,
-          slug: allSubCats[i].slug,
+      } else if (i === allSubCategories.length - 1) {
+        categoryThemes.push({
+          title: allSubCategories[i].title,
+          slug: allSubCategories[i].slug,
           after: ".",
         });
         //Target all elements preceding second to last and last elements in array.
       } else {
-        catThemes.push({
-          title: allSubCats[i].title,
-          slug: allSubCats[i].slug,
+        categoryThemes.push({
+          title: allSubCategories[i].title,
+          slug: allSubCategories[i].slug,
           after: ", ",
         });
       }
     }
-    setCategoryLinks(catThemes);
-  }, [allSubCats]);
+    setCategoryLinks(categoryThemes);
+  }, [allSubCategories]);
 
   return (
     <div className="page-comp-wrapper">

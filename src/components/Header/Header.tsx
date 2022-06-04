@@ -1,13 +1,15 @@
-import React, { FC, ChangeEvent, useState } from "react";
+import { FC } from "react";
 import { Link } from "react-router-dom";
 
 import LogoDark from "../../images/caprichos-de-goya.png";
 import { PageCompLinks } from "../PageCompLinks/PageCompLinks";
+
+import { OtherLink } from "../../interfaces";
 import "./Header.css";
 
 interface Props {
-  otherLinks: any;
-  handleVertCollapse: any;
+  otherLinks: OtherLink[];
+  handleVertCollapse: () => void;
   vertMenuCollapsed: boolean;
 }
 
@@ -17,9 +19,7 @@ export const Header: FC<Props> = ({
   handleVertCollapse,
 }) => {
   return (
-    <header
-    // ref={ref}
-    >
+    <header>
       <nav className="top-nav">
         <Link className="header-branding-link" to="/">
           <img

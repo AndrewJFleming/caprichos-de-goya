@@ -8,19 +8,22 @@ import { SinglePrint } from "./pages/SinglePrint/SinglePrint";
 import { PrintCategory } from "./pages/PrintCategory/PrintCategory";
 import { Header } from "./components/Header/Header";
 import { VerticalMenu } from "./components/VerticalMenu/VerticalMenu";
+import { SubCategory } from "./interfaces";
 
 import { imageData, otherLinks, categoryData } from "./data";
 
 const App: FC = () => {
-  const [allSubCats, setAllSubCats] = useState<any[]>([]);
+  const [allSubCategories, setAllSubCategories] = useState<SubCategory[]>([]);
   const [vertMenuCollapsed, setVertMenuCollapsed] = useState<boolean>(false);
 
   useEffect(() => {
-    const mergedSubCats: any[] = [];
+    const mergedSubCategories: SubCategory[] = [];
     categoryData.forEach((category) =>
-      category.subCats.forEach((subCat) => mergedSubCats.push(subCat))
+      category.subCategories.forEach((subCategory) =>
+        mergedSubCategories.push(subCategory)
+      )
     );
-    setAllSubCats(mergedSubCats);
+    setAllSubCategories(mergedSubCategories);
   }, []);
 
   const handleVertCollapse = () => {
@@ -43,7 +46,10 @@ const App: FC = () => {
         />
         <Routes>
           <Route path="/" element={<Home imageData={imageData} />} />
-          <Route path="/about" element={<About allSubCats={allSubCats} />} />
+          <Route
+            path="/about"
+            element={<About allSubCategories={allSubCategories} />}
+          />
           <Route path="/contact" element={<Contact />} />
           <Route
             path="/caprichos/:imageId"
@@ -52,7 +58,10 @@ const App: FC = () => {
           <Route
             path="/category/:catId"
             element={
-              <PrintCategory imageData={imageData} allSubCats={allSubCats} />
+              <PrintCategory
+                imageData={imageData}
+                allSubCategories={allSubCategories}
+              />
             }
           />
         </Routes>

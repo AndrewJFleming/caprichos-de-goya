@@ -4,9 +4,10 @@ import { Link, useParams } from "react-router-dom";
 import { Image } from "./Image/Image";
 import { Container } from "react-bootstrap";
 import "./SinglePrint.css";
+import { ImageData, ImageDataCategory } from "../../interfaces";
 
 interface Props {
-  imageData: object[];
+  imageData: ImageData[];
 }
 
 export const SinglePrint: FC<Props> = ({ imageData }) => {
@@ -16,8 +17,8 @@ export const SinglePrint: FC<Props> = ({ imageData }) => {
   return (
     <div className="page-comp-wrapper">
       {imageData
-        .filter((image: any) => image.id === imageId)
-        .map((filteredImage: any) => (
+        .filter((image: ImageData) => image.id === imageId)
+        .map((filteredImage: ImageData) => (
           <Container>
             {!isZoomedIn && (
               <React.Fragment>
@@ -27,13 +28,15 @@ export const SinglePrint: FC<Props> = ({ imageData }) => {
                 </h5>
                 {filteredImage.categories.length !== 0 && (
                   <div className="categories-wrapper">
-                    {filteredImage.categories.map((imageCategory: any) => (
-                      <p className="single-image-category">
-                        <Link to={`/category/${imageCategory.slug}`}>
-                          {imageCategory.name}
-                        </Link>
-                      </p>
-                    ))}
+                    {filteredImage.categories.map(
+                      (imageCategory: ImageDataCategory) => (
+                        <p className="single-image-category">
+                          <Link to={`/category/${imageCategory.slug}`}>
+                            {imageCategory.name}
+                          </Link>
+                        </p>
+                      )
+                    )}
                   </div>
                 )}
               </React.Fragment>

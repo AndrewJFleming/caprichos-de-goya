@@ -1,18 +1,19 @@
 import { FC, useState } from "react";
-
-import "./ParentItem.css";
 import { SubCatItem } from "./SubCatItem/SubCatItem";
 
+import { Category, SubCategory } from "../../../interfaces";
+import "./ParentItem.css";
+
 interface Props {
-  cat: any;
-  handleVertCollapse: any;
+  category: Category;
+  handleVertCollapse: () => void;
 }
 
-export const ParentItem: FC<Props> = ({ cat, handleVertCollapse }) => {
+export const ParentItem: FC<Props> = ({ category, handleVertCollapse }) => {
   const [isCollapsed, setIsCollapsed] = useState<boolean>(false);
 
   const handleCollapse = () => {
-    if (cat.collapsible) {
+    if (category.collapsible) {
       setIsCollapsed(!isCollapsed);
     }
   };
@@ -21,23 +22,23 @@ export const ParentItem: FC<Props> = ({ cat, handleVertCollapse }) => {
     <div className="parent-list-item-wrapper">
       <li
         className={`parent-list-item ${
-          cat.collapsible && "collapsible-parent-item"
+          category.collapsible && "collapsible-parent-item"
         }`}
-        key={cat.id}
+        key={category.id}
         onClick={handleCollapse}
       >
         <i className="fas fa-folder vert-menu-item-icon"></i>
-        <span className="parent-list-item-text">{cat.title}</span>
-        {cat.collapsible && (
+        <span className="parent-list-item-text">{category.title}</span>
+        {category.collapsible && (
           <i className="fal fa-angle-down vert-menu-item-angle"></i>
         )}
       </li>
-      {cat.subCats && (
+      {category.subCategories && (
         <ul
           className={`subcat-unordered-list ${isCollapsed ? "collapsed" : ""}`}
         >
-          {cat.subCats.map((subCat: any) => (
-            <SubCatItem key={subCat.id} subCat={subCat} />
+          {category.subCategories.map((subCategory: SubCategory) => (
+            <SubCatItem key={subCategory.id} subCategory={subCategory} />
           ))}
         </ul>
       )}

@@ -2,10 +2,12 @@ import { FC } from "react";
 
 import { Container, Row } from "react-bootstrap";
 import { GalleryItem } from "../../components/GalleryItem/GalleryItem";
+
+import { ImageData } from "../../interfaces";
 import "./Home.css";
 
 interface Props {
-  imageData: object[];
+  imageData: ImageData[];
 }
 
 export const Home: FC<Props> = ({ imageData }) => {
@@ -21,7 +23,7 @@ export const Home: FC<Props> = ({ imageData }) => {
           </p>
         </div>
         <Row>
-          {imageData.map((image: any) => (
+          {imageData.map((image: ImageData) => (
             <GalleryItem
               thumbUrl={image.squareUrl}
               title={image.title}

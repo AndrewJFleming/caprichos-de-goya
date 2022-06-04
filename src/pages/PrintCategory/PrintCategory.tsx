@@ -3,28 +3,32 @@ import { Link, useParams } from "react-router-dom";
 
 import { Container, Row, Col } from "react-bootstrap";
 
+import { ImageData, SubCategory, ImageDataCategory } from "../../interfaces";
+
 interface Props {
-  imageData: any[];
-  allSubCats: any[];
+  imageData: ImageData[];
+  allSubCategories: SubCategory[];
 }
 
-export const PrintCategory: FC<Props> = ({ imageData, allSubCats }) => {
+export const PrintCategory: FC<Props> = ({ imageData, allSubCategories }) => {
   const { catId } = useParams();
 
   return (
     <div className="page-comp-wrapper">
       <Container>
-        {allSubCats
-          .filter((category: any) => category.slug === catId)
-          .map((filteredCategory: any) => (
+        {allSubCategories
+          .filter((category: SubCategory) => category.slug === catId)
+          .map((filteredCategory: SubCategory) => (
             <h1 className="page-component-title">{filteredCategory.title}</h1>
           ))}
         <Row>
           {imageData
-            .filter((image: any) =>
-              image.categories.find((category: any) => category.slug === catId)
+            .filter((image: ImageData) =>
+              image.categories.find(
+                (category: ImageDataCategory) => category.slug === catId
+              )
             )
-            .map((item: any) => (
+            .map((item: ImageData) => (
               <Col className="gallery-col" xs="6" sm="4" md="4" lg="3" xl="2">
                 <Link to={`/caprichos/${item.id}`}>
                   <img

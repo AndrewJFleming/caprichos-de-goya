@@ -4,13 +4,15 @@ import { Link } from "react-router-dom";
 import Logo from "../../images/caprichos-de-goya, dark.png";
 import { PageCompLinks } from "../PageCompLinks/PageCompLinks";
 import { ParentItem } from "./ParentItem/ParentItem";
+
+import { OtherLink, Category } from "../../interfaces";
 import "./VerticalMenu.css";
 
 interface Props {
-  otherLinks: any[];
-  categories: any[];
+  otherLinks: OtherLink[];
+  categories: Category[];
   vertMenuCollapsed: boolean;
-  handleVertCollapse: any;
+  handleVertCollapse: () => void;
 }
 export const VerticalMenu: FC<Props> = ({
   otherLinks,
@@ -25,10 +27,10 @@ export const VerticalMenu: FC<Props> = ({
       </Link>
       <nav>
         <ul>
-          {categories.map((cat) => (
+          {categories.map((category) => (
             <ParentItem
-              cat={cat}
-              key={cat.id}
+              category={category}
+              key={category.id}
               handleVertCollapse={handleVertCollapse}
             />
           ))}

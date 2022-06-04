@@ -1,10 +1,11 @@
 import React, { FC } from "react";
 import { Link } from "react-router-dom";
 
+import { OtherLink } from "../../interfaces";
 import "./PageCompLinks.css";
 
 interface Props {
-  otherLinks: any[];
+  otherLinks: OtherLink[];
   onVertMenu: boolean;
 }
 
