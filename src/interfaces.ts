@@ -1,9 +1,3 @@
-export interface SubCategory {
-  id: string;
-  title: string;
-  slug: string;
-}
-
 export interface OtherLink {
   id: string;
   title: string;
@@ -15,6 +9,12 @@ export interface Category {
   title: string;
   collapsible: boolean;
   subCategories: SubCategory[];
+}
+
+export interface SubCategory {
+  id: string;
+  title: string;
+  slug: string;
 }
 
 export interface CategoryThemes {
