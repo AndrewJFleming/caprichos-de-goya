@@ -30,7 +30,7 @@ export const categoryData = [
     id: "nlSqYP",
     title: "Mundane Themes",
     collapsible: false,
-    subCats: [
+    subCategories: [
       {
         id: "concerns-of-maidens",
         title: "Concerns of Maidens",
@@ -52,7 +52,7 @@ export const categoryData = [
     id: "nlSqYG",
     title: "Fantastical Themes",
     collapsible: false,
-    subCats: [
+    subCategories: [
       {
         id: "behaving-like-beasts",
         title: "Behaving like Beasts",
